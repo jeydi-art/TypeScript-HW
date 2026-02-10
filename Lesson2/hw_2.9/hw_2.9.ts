@@ -1,0 +1,58 @@
+//<!--Скласти розклад на тиждень за домопогою switch.
+// Користувач вводить порядковий номер дня тижня і на екрані відображається інфа, що заплановано на цей день
+// (можна замість плану на день, назву дня англійською).-->
+
+let userKey: string | null = prompt();
+if (userKey !== null) {
+    let key: number = +userKey;
+
+    switch (key) {
+        case 1:
+            console.log("Monday:");
+            console.log("1. Math");
+            console.log("2. English");
+            console.log("3. History");
+            break;
+
+        case 2:
+            console.log("Tuesday:");
+            console.log("1. Physics");
+            console.log("2. Chemistry");
+            console.log("3. PE");
+            break;
+
+        case 3:
+            console.log("Wednesday:");
+            console.log("1. Computer Science");
+            console.log("2. Math");
+            console.log("3. Geography");
+            break;
+
+        case 4:
+            console.log("Thursday:");
+            console.log("1. Biology");
+            console.log("2. Literature");
+            console.log("3. Music");
+            break;
+
+        case 5:
+            console.log("Friday:");
+            console.log("1. English");
+            console.log("2. Art");
+            console.log("3. Physics");
+            break;
+
+        case 6:
+            console.log("Saturday:");
+            console.log("Weekend — no classes!");
+            break;
+
+        case 7:
+            console.log("Sunday:");
+            console.log("Weekend — no classes!");
+            break;
+
+        default:
+            console.log("Invalid day number");
+    }
+}
