@@ -7,5 +7,4 @@ let x: string | number | null | undefined | boolean = null;           // мож�
 if (!x) {
     x = "default";
 }
-
 console.log(x);
